@@ -1,0 +1,28 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">CardIO Scan</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to Refresh"
+      on-refresh="bc.doRefresh()">
+    </ion-refresher>
+
+    <div class="card-container">
+      <button ng-click="bc.scan()" ng-disabled="!bc.canScanCard" class="button button-outline button-positive btn-scan">
+        Scan Card
+      </button>
+    </div>
+
+    <div class="label-status">
+      <label>{{bc.labelStatus}}</label>
+    </div>
+
+    <div class="list list-inset">
+      <div class="item item-card" ng-repeat="field in bc.cardIOResponseFields">
+        <div class="item-label-primary">{{bc.fieldName[field]}}</div>
+        <div class="item-label-secondary">{{bc.data[field] || 'N/A'}}</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
