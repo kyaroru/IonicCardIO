@@ -15,6 +15,7 @@ You need to have the following tools install in your system globally:
 $ git clone https://github.com/kyaroru/IonicCardIO
 $ cd IonicCardIO
 $ npm install
+$ ionic state restore
 ```
 
 ### Running The Project
