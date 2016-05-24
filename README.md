@@ -8,6 +8,7 @@ This project uses [CardIO](https://github.com/vkeepe/card.io) plugin
 
 You need to have the following tools install in your system globally:
 - [Node.js](https://nodejs.org/) v4+
+- [Apache Cordova](https://cordova.apache.org/)
 - [Ionic Framework](http://ionic.io/) v1.3
 - [Gulp.js](http://gulpjs.com/)
 
