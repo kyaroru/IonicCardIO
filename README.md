@@ -1,4 +1,4 @@
-# IonicUnitTest
+# IonicCardIO
 IonicCardIO is a simple app for scanning and reading your credit card information.
 
 ### Reference
